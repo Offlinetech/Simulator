@@ -1,5 +1,5 @@
 module "resource_group_region1" {
-  source = "../../../tf-modules/resource-group"
+  source = "../../tf-modules/resource-group"
 
   ENABLED = var.ENABLED
   NAME    = upper("${var.PROJECT}back-${var.ENVIRONMENT}-${local.regions_acronym[0].rg01}-rg01")
@@ -9,7 +9,7 @@ module "resource_group_region1" {
 }
 
 module "resource_group_region2" {
-  source = "../../../tf-modules/resource-group"
+  source = "../../tf-modules/resource-group"
 
   ENABLED  = contains(local.prd_envs, lower(var.ENVIRONMENT)) ? true : false
   NAME     = upper("${var.PROJECT}back-${var.ENVIRONMENT}-${local.regions_acronym[0].rg02}-rg02")
