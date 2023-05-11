@@ -1,1 +1,1 @@
-# Offline Technologies development
+# Offline Technologies
