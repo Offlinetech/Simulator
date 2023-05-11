@@ -110,13 +110,13 @@ locals {
     "CosmosDb"
   ]
 
-  functions_snets = [
-    module.subnet_table_version_all_regions,
-    module.subnet_etf_functions_calculation_all_regions,
-    module.subnet_etf_functions_validation_all_regions,
-    module.subnet_user_management_all_regions,
-    module.subnet_etf_functions_storage_all_regions
-  ]
+  # functions_snets = [
+  #   module.subnet_table_version_all_regions,
+  #   module.subnet_etf_functions_calculation_all_regions,
+  #   module.subnet_etf_functions_validation_all_regions,
+  #   module.subnet_user_management_all_regions,
+  #   module.subnet_etf_functions_storage_all_regions
+  # ]
 
   # functions_snets_2 = [
   #   module.subnet_user_management_1_all_regions,
